@@ -13,6 +13,10 @@ for (let i = 0; i < 8; i++) {
             chessBoardString[counter] === " "
                 ? "\u00A0"
                 : chessBoardString[counter];
+        chessBoardTableData.style.backgroundColor =
+            (Math.floor(counter / 8) + (counter % 8)) % 2 === 0
+                ? "#f0d9b5"
+                : "#946f51";
         chessBoardTableRow.append(chessBoardTableData);
 
         counter++;
