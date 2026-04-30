@@ -30,15 +30,28 @@ function dropHandler(event) {
     if (elementToMove.parentNode === squareElement) {
         return;
     }
-    squareElement.innerHTML = "";
+    let elementToDelete = squareElement.querySelector("span");
+    if (elementToDelete) {
+        squareElement.removeChild(elementToDelete);
+    }
     squareElement.appendChild(elementToMove);
 }
 
 let chessBoard = document.getElementById("chessBoard");
 for (let i = 0; i < 64; i++) {
     let squareElement = chessBoard.children[i];
+
+    let backgroundDiv = document.createElement("div");
+    backgroundDiv.className = "chessBoardSquareBackground";
+    backgroundDiv.style.backgroundColor =
+        (Math.floor(i / 8) + (i % 8)) % 2 === 0
+            ? whiteSquareColor
+            : blackSquareColor;
+    squareElement.appendChild(backgroundDiv);
+
     let squareTextElement = document.createElement("span");
     squareTextElement.id = "pc" + i;
+    squareTextElement.style.zIndex = 2;
     if (chessBoardString[i] === " ") {
         squareTextElement.textContent = "\u00A0";
     } else {
@@ -47,8 +60,4 @@ for (let i = 0; i < 64; i++) {
         squareTextElement.ondragstart = dragStartHandler;
     }
     squareElement.appendChild(squareTextElement);
-    squareElement.style.backgroundColor =
-        (Math.floor(i / 8) + (i % 8)) % 2 === 0
-            ? whiteSquareColor
-            : blackSquareColor;
 }

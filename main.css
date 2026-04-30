@@ -20,6 +20,21 @@ body {
     height: calc(var(--chess-board-len) / 8);
 
     display: grid;
+    position: relative;
     place-items: center;
     font-size: calc(var(--chess-board-len) / 8);
+}
+
+.chessBoardSquareBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.chessBoardSquare span {
+    position: relative;
+    z-index: 2;
 }
