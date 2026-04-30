@@ -40,10 +40,13 @@ for (let i = 0; i < 64; i++) {
     let squareTextElement = document.createElement("span");
     squareTextElement.id = "pc" + i;
     squareElement.appendChild(squareTextElement);
-    squareTextElement.textContent =
-        chessBoardString[i] === " " ? "\u00A0" : chessBoardString[i];
-    squareTextElement.draggable = true;
-    squareTextElement.ondragstart = dragStartHandler;
+    if (chessBoardString[i] === " ") {
+        squareTextElement.textContent = "\u00A0";
+    } else {
+        squareTextElement.textContent = chessBoardString[i];
+        squareTextElement.draggable = true;
+        squareTextElement.ondragstart = dragStartHandler;
+    }
     squareElement.style.backgroundColor =
         (Math.floor(i / 8) + (i % 8)) % 2 === 0
             ? whiteSquareColor
