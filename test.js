@@ -36,15 +36,15 @@ function dropHandler(event) {
 
 let chessBoard = document.getElementById("chessBoard");
 for (let i = 0; i < 64; i++) {
-    let tileElement = chessBoard.children[i];
-    let tileTextElement = document.createElement("span");
-    tileTextElement.id = "pc" + i;
-    tileElement.appendChild(tileTextElement);
-    tileTextElement.textContent =
+    let squareElement = chessBoard.children[i];
+    let squareTextElement = document.createElement("span");
+    squareTextElement.id = "pc" + i;
+    squareElement.appendChild(squareTextElement);
+    squareTextElement.textContent =
         chessBoardString[i] === " " ? "\u00A0" : chessBoardString[i];
-    tileTextElement.draggable = true;
-    tileTextElement.ondragstart = dragStartHandler;
-    tileElement.style.backgroundColor =
+    squareTextElement.draggable = true;
+    squareTextElement.ondragstart = dragStartHandler;
+    squareElement.style.backgroundColor =
         (Math.floor(i / 8) + (i % 8)) % 2 === 0
             ? whiteSquareColor
             : blackSquareColor;
