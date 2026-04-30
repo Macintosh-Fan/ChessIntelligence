@@ -39,7 +39,6 @@ for (let i = 0; i < 64; i++) {
     let squareElement = chessBoard.children[i];
     let squareTextElement = document.createElement("span");
     squareTextElement.id = "pc" + i;
-    squareElement.appendChild(squareTextElement);
     if (chessBoardString[i] === " ") {
         squareTextElement.textContent = "\u00A0";
     } else {
@@ -47,6 +46,7 @@ for (let i = 0; i < 64; i++) {
         squareTextElement.draggable = true;
         squareTextElement.ondragstart = dragStartHandler;
     }
+    squareElement.appendChild(squareTextElement);
     squareElement.style.backgroundColor =
         (Math.floor(i / 8) + (i % 8)) % 2 === 0
             ? whiteSquareColor
