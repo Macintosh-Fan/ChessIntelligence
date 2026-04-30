@@ -55,7 +55,7 @@ for (let i = 0; i < 64; i++) {
     squareTextElement.id = "pc" + i;
     squareTextElement.style.zIndex = 2;
     if (chessBoardString[i] === " ") {
-        squareTextElement.textContent = "\u00A0";
+        squareTextElement.innerHTML = "";
     } else {
         squareTextElement.textContent = chessBoardString[i];
         squareTextElement.draggable = true;
