@@ -14,6 +14,8 @@ const DRAG_PIECE_LABEL = "dragPiece";
 
 function dragStartHandler(event) {
     event.dataTransfer.setData(DRAG_PIECE_LABEL, event.target.id);
+
+    event.dataTransfer.effectAllowed = "move";
 }
 
 function dragoverHandler(event) {

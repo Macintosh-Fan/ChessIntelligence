@@ -37,4 +37,9 @@ body {
 .chessBoardSquare span {
     position: relative;
     z-index: 2;
+    cursor: grab;
+}
+
+.chessBoardSquare span:active {
+    cursor: grabbing;
 }
