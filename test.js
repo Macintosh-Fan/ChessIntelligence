@@ -1,5 +1,5 @@
 let whiteSquareColor = "#f0d9b5";
-let blackSquareColor = "#946f51";
+let blackSquareColor = "#b58863";
 let chessBoardString =
     "♜♞♝♛♚♝♞♜" +
     "♟♟♟♟♟♟♟♟" +
