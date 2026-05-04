@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000mm"
+   height="1000mm"
+   viewBox="0 0 1000 1000"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   sodipodi:docname="forced.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:antialias-rendering="false"
+     inkscape:zoom="0.17840488"
+     inkscape:cx="1975.8428"
+     inkscape:cy="1908.5801"
+     inkscape:window-width="1512"
+     inkscape:window-height="870"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path1"
+       style="fill:#9c7c5b;stroke-width:4.72599"
+       d="M 1000,500 A 500,500 0 0 1 500,1000 500,500 0 0 1 0,500 500,500 0 0 1 500,0 500,500 0 0 1 1000,500 Z" />
+    <text
+       xml:space="preserve"
+       style="font-size:635px;font-family:Menlo;-inkscape-font-specification:Menlo;writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke-width:4.72599;letter-spacing:-66.14583333px"
+       x="-94.915192"
+       y="220.97443"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="stroke-width:4.72599;letter-spacing:-66.14583333px" /></text>
+    <path
+       style="font-weight:bold;font-size:1455.21px;font-family:Menlo;-inkscape-font-specification:'Menlo Bold';letter-spacing:-185.208px;fill:#ffffff;stroke-width:4.72599"
+       d="M 891.15873,550.44873 684.38818,757.21928 599.12197,671.95307 691.4937,579.58135 H 108.84127 V 420.41776 H 691.4937 l -92.37173,-92.37173 85.26621,-85.26621 206.77055,206.77056 z"
+       id="text1"
+       aria-label="→" />
+  </g>
+</svg>
